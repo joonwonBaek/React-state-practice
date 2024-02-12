@@ -9,6 +9,10 @@ export const useTodoStore = create((set) => ({
         { text: todoText, id: getId(), isCompleted: false },
       ],
     })),
+  deleteTodo: (todoId) =>
+    set((state) => ({
+      todos: state.todos.filter((todo) => todo.id !== todoId),
+    })),
 }));
 
 let id = 0;
