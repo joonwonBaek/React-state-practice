@@ -22,6 +22,7 @@ export const useTodoStore = create((set) => ({
             isCompleted: true,
           };
         }
+        return todo;
       }),
     })),
 }));
