@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createStore } from "redux";
-import counter from "./reducers";
+import counter from "./reducers/counter";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
